@@ -2,7 +2,8 @@ jQuery(document).ready(function($) {
     $('.input_phone').mask("+7(999) 999-9999");
 
     $('.formstom__slider').owlCarousel({
-        nav: false,
+        nav: true,
+        navText: ['', ''],
         loop: true,
         dots: false,
         responsive : {
@@ -19,6 +20,10 @@ jQuery(document).ready(function($) {
             }
         }
     });
+    $('.scroll').jScrollPane({
+        contentWidth: '0px'
+    });
+
 
 
 });

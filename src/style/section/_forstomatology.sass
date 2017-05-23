@@ -6,6 +6,7 @@
 		iframe
 			width: 100%
 			min-height: 400px
+			border: none
 	&__right
 		width: 32%
 		
@@ -24,12 +25,35 @@
 		text-align: center
 		font-weight: 700
 	&__text
-		height: 350px
+		height: 330px
 		font-family: Gilroy, sans-serif
 		color: #285500
-		font-size: 1.313em
+		font-size: 1.2em
 		font-weight: 400
+		overflow-y: auto
 		line-height: 1.286
+		
+
+.owl-theme .owl-nav [class*="owl-"]
+		background: none
+		width: 99px
+		height: 99px
+		background-image: url(../img/arrow.png)
+		background-repeat: no-repeat
+		&:hover
+			background: none
+			background-image: url(../img/arrow.png)
+			
+.owl-theme .owl-nav .owl-prev
+	transform: translateY(-50%) rotate(180deg)
+	position: absolute
+	top: 50%
+	left: -120px
+.owl-theme .owl-nav .owl-next
+	transform: translateY(-50%)
+	position: absolute
+	top: 50%
+	right: -120px
 		
 	
 	
