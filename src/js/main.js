@@ -1,3 +1,11 @@
+window.onload = function(){
+
+    Waves.init({
+    duration: 500,
+    delay: 200
+    });
+};
+
 jQuery(document).ready(function($) {
     $('.input_phone').mask("+7(999) 999-9999");
 
@@ -24,6 +32,14 @@ jQuery(document).ready(function($) {
         contentWidth: '0px'
     });
 
-
-
+    Waves.attach(".button", [
+        "waves-button",
+        "waves-float",
+        "waves-light"
+    ]);
+    Waves.attach(".uslugi__img", [
+        "waves-circle",
+        "waves-float",
+        "waves-light"
+    ]);
 });

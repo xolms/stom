@@ -1,0 +1,139 @@
+.head
+	min-height: 100vh
+	position: relative
+	overflow: hidden
+
+	&__video
+		width: 100%
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		&::after
+			content: ''
+			position: absolute
+			z-index: 2
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			display: block
+			opacity: .3
+			@include background (linear-gradient(0deg, #ffffff 0%, #828282 0%, #5c5c5c 0%, #262626 0%, #000000 0%, #000000 0%, #000000 0%, #000000 0%, #262626 0%, #000000 0%, #ffffff 0%, #949494 6%, #6f6e6e 16%, #363636 25%, #000000 50%, #363636 75%, #6f6e6e 84%, #6f6e6e 92%, #ffffff 100%))
+		video
+			width: 100%
+			min-height: 100vh
+	&__topline
+		position: relative
+		z-index: 3	
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		display: flex
+		padding-top: 60px
+		justify-content: space-between
+		flex-wrap: nowrap
+		align-items: center
+
+	&__logo
+	&__phone
+		text-align: center	
+	&__title	
+		text-transform: uppercase
+		position: absolute
+		z-index: 3
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+		right: 0
+		text-align: center
+		color: #fff
+		strong 
+			font-family: ProximaNovaCond, sans-serif
+			color: #ff8c00;
+			font-size: 2.25em /* Приближение из-за подстановки шрифтов */
+			font-weight: 300
+			line-height: 0.667
+			letter-spacing: 8px
+			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75)
+		h1
+			font-family: ProximaNovaCond, sans-serif
+			color: #ffffff
+			font-size: 4.063em /* Приближение из-за подстановки шрифтов */
+			font-weight: 100
+			line-height: 1.046
+			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75)
+			letter-spacing: 10px
+			max-width: 700px
+			margin: 20px auto
+			padding: 20px 0
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				max-width: 450px
+				margin: 0 auto
+				height: 2px
+				background-color: #ff8c00
+			&::after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				max-width: 450px
+				margin: 0 auto
+				height: 2px
+				background-color: #ff8c00	
+		h2
+			font-family: ProximaNovaCond, sans-serif
+			color: #ff8c00
+			font-size: 1.375em
+			font-weight: 400
+			line-height: 1.409
+			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75)
+			max-width: 900px
+			margin: 0 auto		
+			letter-spacing: 8px
+			.green
+				display: block
+				color: rgb(0, 166, 1)
+
+
+		
+.phone
+	&__top
+		a
+			height: 33px
+			display: inline-block
+			background-image: url("../img/phone.png")		
+			background-repeat: no-repeat
+			background-position: center left
+			padding-left: 50px
+			font-family: ProximaNovaExCn, sans-serif
+			font-weight: 400
+			text-decoration: none
+			.white
+				vertical-align: top
+				color: #fff
+				font-size: 1.875em
+			.green
+				position: relative
+				bottom: 7px
+				color: #285500
+				font-size: 2.313em
+				padding-left: 7px		
+	&__center
+		font-family: ProximaNovaCond,sans-serif
+		color: #ffffff
+		font-size: 1.1em  /* Приближение из-за подстановки шрифтов */
+		font-weight: 400
+		line-height: 1.6
+		text-transform: uppercase
+		padding-bottom: 10px
+	&__bottom
+		.button
+			width: 220px	
