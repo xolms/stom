@@ -8,6 +8,9 @@
 		position: absolute
 		top: 0
 		left: 0
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
 		height: 100%
 		&::after
 			content: ''
@@ -23,14 +26,15 @@
 		video
 			width: 100%
 			min-height: 100vh
+			position: relative
 	&__topline
 		position: relative
 		z-index: 3	
-		max-width: 1170px
+		max-width: 90%
 		width: 100%
 		margin: 0 auto
 		display: flex
-		padding-top: 60px
+		padding-top: 30px
 		justify-content: space-between
 		flex-wrap: nowrap
 		align-items: center
@@ -43,38 +47,40 @@
 		position: absolute
 		z-index: 3
 		top: 50%
+		width: 80%
 		transform: translateY(-50%)
 		left: 0
 		right: 0
 		text-align: center
 		color: #fff
+		margin: 0 auto
 		strong 
 			font-family: ProximaNovaCond, sans-serif
-			color: #ff8c00;
-			font-size: 2.25em /* Приближение из-за подстановки шрифтов */
+			color: #ff8c00
+			font-size: 3.5em /* Приближение из-за подстановки шрифтов */
 			font-weight: 300
 			line-height: 0.667
-			letter-spacing: 8px
+			letter-spacing: 18px
 			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75)
 		h1
 			font-family: ProximaNovaCond, sans-serif
 			color: #ffffff
-			font-size: 4.063em /* Приближение из-за подстановки шрифтов */
-			font-weight: 100
-			line-height: 1.046
+			font-size: 6em /* Приближение из-за подстановки шрифтов */
+			font-weight: 300
+			line-height: 1
 			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75)
-			letter-spacing: 10px
-			max-width: 700px
+			max-width: 1000px
 			margin: 20px auto
 			padding: 20px 0
 			position: relative
+			letter-spacing: 21px
 			&::before
 				content: ''
 				position: absolute
 				top: 0
 				left: 0
 				right: 0
-				max-width: 450px
+				max-width: 650px
 				margin: 0 auto
 				height: 2px
 				background-color: #ff8c00
@@ -84,20 +90,20 @@
 				bottom: 0
 				left: 0
 				right: 0
-				max-width: 450px
+				max-width: 650px
 				margin: 0 auto
 				height: 2px
 				background-color: #ff8c00	
 		h2
 			font-family: ProximaNovaCond, sans-serif
 			color: #ff8c00
-			font-size: 1.375em
+			font-size: 1.675em
 			font-weight: 400
 			line-height: 1.409
 			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75)
-			max-width: 900px
+			max-width: 1300px
 			margin: 0 auto		
-			letter-spacing: 8px
+			letter-spacing: 15px
 			.green
 				display: block
 				color: rgb(0, 166, 1)
@@ -107,33 +113,145 @@
 .phone
 	&__top
 		a
-			height: 33px
+			height: 50px
 			display: inline-block
 			background-image: url("../img/phone.png")		
 			background-repeat: no-repeat
 			background-position: center left
-			padding-left: 50px
+			padding-left: 60px
 			font-family: ProximaNovaExCn, sans-serif
 			font-weight: 400
 			text-decoration: none
+			background-size: 50px
+			letter-spacing: 4px
 			.white
 				vertical-align: top
 				color: #fff
-				font-size: 1.875em
+				position: relative
+				top: -2px
+				font-size: 2.5em
 			.green
 				position: relative
-				bottom: 7px
+				bottom: 8px
+
 				color: #285500
-				font-size: 2.313em
+				font-size: 3em
 				padding-left: 7px		
 	&__center
 		font-family: ProximaNovaCond,sans-serif
 		color: #ffffff
-		font-size: 1.1em  /* Приближение из-за подстановки шрифтов */
+		font-size: 1.4em  /* Приближение из-за подстановки шрифтов */
 		font-weight: 400
 		line-height: 1.6
 		text-transform: uppercase
 		padding-bottom: 10px
+		letter-spacing: 3px
 	&__bottom
-		.button
+		.buttons
 			width: 220px	
+			background-color: rgba(#ff8c00, .6)
+			z-index: 10
+			position: relative
+
+@media screen and (max-width: 1700px)
+	.head
+		&__title
+			max-width: 1400px
+@media screen and (max-width: 1500px)		
+	.head__video
+		video
+			position: relative
+	.head
+		&__video
+			video
+				width: auto	
+				min-width: 100%
+@media screen and (max-width: 1400px)
+	.head
+		&__topline
+			max-width: 95%		
+@media screen and (max-width: 1300px)
+	.head__video
+		video
+			position: relative
+	.phone
+		&__top
+			a
+				height: 33px
+				padding-left: 40px
+				background-size: 33px
+				letter-spacing: 4px
+				.white
+					color: #fff
+					top: -2px
+					font-size: 1.875em
+				.green
+					position: relative
+					bottom: 8px
+					color: #285500
+					font-size: 2.313em		
+		&__center
+				font-size: 0.938em  /* Приближение из-за подстановки шрифтов */
+				letter-spacing: 4px
+	.head
+		&__title
+			h1
+				font-size: 4.063em
+				letter-spacing: 10px
+			strong
+				font-size: 2.25em
+				letter-spacing: 10px
+			h2
+				font-size: 1.375em
+				letter-spacing: 10px	
+
+
+@media screen and (max-height: 750px)
+
+	.head
+		min-height: 1000px			
+		&__video
+			video
+				min-height: 1000px				
+@media screen and (max-width: 768px)
+
+	.head__topline
+		display: block
+		width: 100%
+	.head
+		&__title
+			top: 57%
+		&__logo
+			float: none
+			width: 100%
+			text-align: center
+	.head
+		min-height: 1200px			
+		&__video
+			video
+				min-height: 1200px	
+	.head__title
+		width: 95%			
+@media screen and (max-width: 600px)
+	
+	.phone__bottom
+		display: none	
+@media screen and (max-width: 500px)
+	
+	.head__title strong
+		font-size: 2em
+	.head__title h1
+		font-size: 3em
+	.head__title h2
+		font-size: 1.1em
+	.head
+		min-height: 1000px			
+		&__video
+			video
+				min-height: 1000px	
+@media screen and (max-width: 380px)
+	.head
+		min-height: 1100px			
+		&__video
+			video
+				min-height: 1100px		

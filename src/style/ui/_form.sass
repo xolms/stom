@@ -1,19 +1,21 @@
 .form
 	&__item
-		width: 362px
+		width: 450px
 		margin: 0 auto
 		margin-top: 25px
+		padding-left: 10px
+		padding-right: 10px
 		input
 			width: 100%
 			padding-left: 30px
-			height: 52px
-			line-height: 50px
+			height: 70px
+			line-height: 65px
 			background-color: rgba(112, 192, 112, 0.2)
 			border-radius: 25px
 			border: none
 			font-family: ProximaNovaCond, sans-serif
 			font-weight: 300
-			font-size: 1.5em
+			font-size: 1.7em
 			color: #285500
 			border: 1px solid transparent
 			transition: all .25s
@@ -23,9 +25,46 @@
 				background-color: rgba(112, 192, 112, 0.3)
 			&:focus
 				border-color: rgba(112, 192, 112, 0.6)
+		.map__button
+			font-size: 1.7em		
+			width: 100%
+			height: 70px	
 
 
 .waves-button
 	padding: 0				
 			
-			
+.buttons
+	margin: 0 auto
+	display: block
+	position: relative
+	overflow: hidden
+	text-align: center
+	&::after 
+    background-color: rgba(255, 140, 0, 0.6)
+    border-radius: 50px
+    content: ""
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    transform: scaleY(0)
+    transition: all 0.25s ease 0s
+    width: 100%
+    z-index: -1
+	&:hover
+		line-height: 60px
+		box-shadow: none
+		&::after
+			transform: scaleY(1)
+			background-color: lighten(rgba(255, 140, 0, 0.6), 25%)
+
+.waves-button, .waves-button-input, .waves-button:hover, .waves-button:visited
+	font-size: 1.3em	
+	color: #000		
+
+@media screen and (max-width: 768px)
+	.form
+		&__item
+			input
+				font-size: 1.4em

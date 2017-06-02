@@ -1,37 +1,43 @@
+.forstom__bottom
+	align-items: flex-start
 .forstom
 	&__top
 		margin-bottom: 70px
 	&__left
-		width: 63%
+		width: 55%
 		iframe
 			width: 100%
-			min-height: 400px
+			min-height: 600px
 			border: none
 	&__right
-		width: 32%
+		width: 42%
+		.buttons
+			margin-top: 40px
 		
 	&__wrap
 		background-color: rgba(0, 166, 1, 0.2)
 		border-radius: 10px
-		padding: 10px
-		height: 400px
+		padding: 10px 30px
+		height: 500px
 		overflow: hidden
 		
 		
 	&__title
 		font-family: Gilroy, sans-serif
 		color: #275500
-		font-size: 1.875em
+		font-size: 2.4em
 		text-align: center
 		font-weight: 700
+		letter-spacing: 5px
 	&__text
-		height: 330px
+		height: 400px
 		font-family: Gilroy, sans-serif
 		color: #285500
-		font-size: 1.2em
+		font-size: 1.6em
 		font-weight: 400
 		overflow-y: auto
-		line-height: 1.286
+		line-height: 1.6
+		margin-top: 10px
 		
 
 .owl-theme .owl-nav [class*="owl-"]
@@ -54,6 +60,45 @@
 	position: absolute
 	top: 50%
 	right: -120px
-		
-	
-	
+
+@media screen and (max-width: 1280px)
+	.forstom
+		&__left
+			width: 49%
+			iframe
+				min-height: 400px
+		&__right
+			width: 49%	
+		&__wrap
+			height: 400px	
+		&__title
+			font-size: 1.875em
+		&__text
+			font-size: 1.2em	
+			height: 330px			
+@media screen and (max-width: 992px)	
+	.forstom
+		&__bottom
+			display: block
+		&__left
+			width: 100%
+			iframe
+				height: 550px
+		&__right
+			width: 100%
+			margin-top: 30px
+@media screen and (max-width: 768px)
+	.forstom
+		&__left
+			iframe
+				height: 400px			
+@media screen and (max-width: 600px)	
+	.owl-theme .owl-nav [class*="owl-"]
+		display: none
+	.forstom__wrap
+		padding: 10px	
+@media screen and (max-width: 480px)
+	.forstom
+		&__left
+			iframe
+				height: 300px					

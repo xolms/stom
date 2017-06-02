@@ -2,7 +2,8 @@
 	&__left
 		display: table-cell
 		vertical-align: top
-		width: 50%
+		width: 65%
+		height: 600px
 		position: relative
 		iframe
 			width: 100%
@@ -13,12 +14,13 @@
 			left: 0
 			right: 0
 			bottom: 0
+
 			top: 0
 	&__right
 		padding: 50px 0
 		display: table-cell
 		vertical-align: middle
-		width: 50%
+		width: 35%
 		text-align: center
 	&__title
 		font-family: ProximaNovaCond, sans-serif
@@ -28,8 +30,10 @@
 		line-height: 1.2
 		margin: 0 auto
 		text-transform: uppercase		
-		
-.button
+
+
+
+.buttons
 	border-radius: 40px
 	text-transform: uppercase
 	border: none
@@ -50,6 +54,27 @@
 	&:focus
 		box-shadow: none
 		background-color: lighten(#f6a331, 5%)
-	
+@media screen and (max-width: 1400px)	
+		.map__left
+			width: 50%
+		.map__right
+			width: 50%	
+
 			
-		
+@media screen and (max-width: 992px)
+	.section_table
+		display: block
+	.map__left
+		display: none
+	.map__right
+		display: block
+		width: 100%
+	.title_map
+		display: none
+	.section_map	
+		padding: 0	
+	.section_personal
+		.title_map
+			display: block
+
+							

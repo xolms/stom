@@ -1,0 +1,126 @@
+.section_personal
+	position: relative
+	margin-top: 70px
+.personal__sliderwrap
+	width: 80%
+	margin: 0 auto
+	position: relative
+	margin-bottom: 40px
+
+	.item
+		position: relative	
+		cursor: pointer
+		border-radius: 10em
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			transition: all .25s
+			background-color: rgba(#000, .3)
+			opacity: 1
+		&.personal_button
+			&::after
+				opacity: 0	
+.personal
+	+clearfix
+	&__img
+		float: left
+		width: 35%
+		display: none
+		overflow: hidden
+		text-align: center
+		img
+			width: auto //TODO
+			height: 100%
+			vertical-align: top
+		&.active
+			display: block	
+	&__textwrap
+		width: 62%	
+		float: right
+		background-color: darken(#99db99,5%)
+		min-height: 650px
+		padding: 18px 60px
+.personal__textitem
+	padding-top: 30px
+	display: none
+	&.active
+		display: block
+.personal__title
+	font-family: Gilroy, sans-serif
+	font-size: 2.3em
+	font-weight: 700	
+	color: #275500
+	line-height: 1.5
+	text-align: center
+	letter-spacing: 5px	
+	padding-bottom: 20px
+
+.personal__text
+	font-family: Gilroy, sans-serif
+	font-weight: 400
+	color: #ffffff
+	font-size: 1.8em
+	line-height: 1.368
+	text-align: left
+	height: 450px
+	overflow-y: auto
+
+.personal
+	.owl-theme .owl-nav [class*="owl-"]
+		background-image: url("../img/arrow_pers.png")
+		height: 50px
+		width: 37px
+		&:hover
+			background-repeat: no-repeat	
+	.owl-theme .owl-nav .owl-prev
+		left: -80px
+	.owl-theme .owl-nav .owl-next
+		right: -80px	
+
+
+@media screen and (max-width: 1600px)
+	.personal
+		&__img
+			max-height: 100%
+			width: 50%
+		&__textwrap
+			width: 50%		
+			padding: 25px 30px
+		&__text
+			font-size: 1.6em
+		&__title
+			font-size: 2em	
+@media screen and (max-width: 1200px)
+	.personal
+		&__img
+			width: 100%
+			float: none
+			img
+				width: 100%
+				height: auto
+		&__textwrap
+			float: none
+			width: 100%		
+
+@media screen and (max-width: 768px)
+	.personal
+		&__title
+			font-size: 1.6em
+		&__text
+			font-size: 1.4em	
+	.personal__textitem
+		padding-top: 15px			
+@media screen and (max-width: 500px)
+	.personal
+		&__title
+			font-size: 1.4em
+		&__text
+			font-size: 1.2em						
