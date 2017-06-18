@@ -5,8 +5,10 @@
 .second-personal
 	margin-top: 0
 	padding: 100px 0	
+.personal__slider
+	text-align: center	
 .personal__sliderwrap
-	width: 80%
+	width: 90%
 	margin: 0 auto
 	position: relative
 	margin-bottom: 40px
@@ -16,9 +18,13 @@
 		cursor: pointer
 		border-radius: 10em
 		overflow: hidden
+		margin: 0 10px
+		display: inline-block
+		margin-bottom: 30px
 		img
-			width: 100%
-			height: auto
+			width: 120px
+			height: 120px
+			vertical-align: top
 		&::after
 			content: ''
 			position: absolute
@@ -33,22 +39,23 @@
 			&::after
 				opacity: 0	
 .personal
-	+clearfix
+	display: flex
+	justify-content: space-between
+	flex-wrap: nowrap
+	align-items: center
 	&__img
-		float: left
 		width: 35%
 		display: none
 		overflow: hidden
 		text-align: center
 		img
-			width: auto //TODO
-			height: 100%
+			width: 100%
+			height: auto
 			vertical-align: top
 		&.active
 			display: block	
 	&__textwrap
-		width: 62%	
-		float: right
+		width: 62%
 		background-color: darken(#99db99,5%)
 		min-height: 650px
 		padding: 18px 60px
@@ -94,16 +101,28 @@
 	.personal
 		&__img
 			max-height: 100%
-			width: 50%
+			width: 40%
 		&__textwrap
 			width: 50%		
 			padding: 25px 30px
 		&__text
 			font-size: 1.6em
 		&__title
-			font-size: 2em	
+			font-size: 2em
+	.personal__text
+		height: 400px			
+@media screen and (max-width: 1400px)
+	.personal
+		&__img		
+			width: 45%
+		&__textwrap
+			width: 50%		
+			padding: 10px 20px	
+	.personal__text
+		height: 350px			
 @media screen and (max-width: 1200px)
 	.personal
+		display: block
 		&__img
 			width: 100%
 			float: none

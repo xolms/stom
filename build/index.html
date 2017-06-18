@@ -12,7 +12,31 @@
     <link rel="stylesheet" href="style/styles.css"/>
     <title>Главная</title>
   </head>
-  <body>
+  <body><div class="sv_settings text-center" id="sv_settings">
+    <span>Размер шрифта
+        <span class="fs-outer">
+            <button class="btn btn-default fs-n" id="fs-n">А</button>
+            <button class="btn btn-default fs-m" id="fs-m">А</button>
+            <button class="btn btn-default fs-l" id="fs-l">А</button>
+        </span>
+    </span>
+
+    <span class="mgl20" style="position: absolute; font-size: 2em; top: 50px;left: 0;right: 0;width: 150px;margin: 0 auto; text-decoration: none; color: #000;">Цветовая схема
+        <span class="cs-outer">
+            <button class="btn btn-default cs-bw" id="cs-bw">А</button>
+            <button class="btn btn-default cs-wb" id="cs-wb">А</button>
+            <button class="btn btn-default cs-bb" id="cs-bb">А</button>
+            <button class="btn btn-default cs-gb" id="cs-gb">А</button>
+            <button class="btn btn-default cs-yg" id="cs-yg">А</button>
+        </span>
+    </span>
+
+    <span class="mgl20">Изображения
+        <span class="img-outer">
+            <button class="btn btn-default" id="img-onoff"><span class="glyphicon glyphicon-picture"></span><span id="img-onoff-text"> Отключить</span></button>
+        </span>
+    </span>
+</div>
     <header class="head">
       <div style="background-image: url(img/head_bg.jpg)" class="head__video">
         <video autoplay="autoplay" loop="loop" muted="muted">
@@ -30,25 +54,18 @@
         </div>
       </div>
       <div class="head__title"><strong>Стоматология апекс</strong>
-        <h1> Лечение кариеса от<br/> <span class="green">2400 руб</span></h1>
-        <h2>в Севастополe			</h2>
+        <h1>Лечение зубов может<br/> быть приятным</h1>
+        <h2>Лечение зубов и лечение десен, изготовление зубных <bt/>протезов и коронок, установка имплантов<span class="green">в Севастополe			</span></h2>
       </div>
     </header>
     <section style="background-image: url(img/bg1.jpg)" class="section section_image section_forstom">
-      <div class="usluga section_wrapper">
-        <div class="usluga__wrapper">
-          <div class="usluga__left">
-            <div class="usluga__img"><img src="img/work1.jpg" alt="123"/></div>
-          </div>
-          <div class="usluga__right">
-            <h4 class="usluga__title">Лечение кариеса</h4>
-            <div class="usluga__text scroll">
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus incidunt, nisi numquam ad, cumque mollitia illo! Eius animi voluptates corporis sequi in quod ipsam! Explicabo perspiciatis quod similique, aut ipsa!</p>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus incidunt, nisi numquam ad, cumque mollitia illo! Eius animi voluptates corporis sequi in quod ipsam! Explicabo perspiciatis quod similique, aut ipsa!</p>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus incidunt, nisi numquam ad, cumque mollitia illo! Eius animi voluptates corporis sequi in quod ipsam! Explicabo perspiciatis quod similique, aut ipsa!</p>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus incidunt, nisi numquam ad, cumque mollitia illo! Eius animi voluptates corporis sequi in quod ipsam! Explicabo perspiciatis quod similique, aut ipsa!</p>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus incidunt, nisi numquam ad, cumque mollitia illo! Eius animi voluptates corporis sequi in quod ipsam! Explicabo perspiciatis quod similique, aut ipsa!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus incidunt, nisi numquam ad, cumque mollitia illo! Eius animi voluptates corporis sequi in quod ipsam! Explicabo perspiciatis quod similique, aut ipsa!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus incidunt, nisi numquam ad, cumque mollitia illo! Eius animi voluptates corporis sequi in quod ipsam! Explicabo perspiciatis quod similique, aut ipsa!</p>
-            </div>
+      <div class="section_wrapper section_small">
+        <div class="forstom__top">
+          <div class="formstom__slider owl-carousel owl-theme">
+            <div class="item"><a href="img/head_bg.jpg" class="popup"><img src="img/head_bg.jpg" alt="123"/></a></div>
+            <div class="item"><a href="img/head_bg.jpg" class="popup"><img src="img/head_bg.jpg" alt="123"/></a></div>
+            <div class="item"><a href="img/head_bg.jpg" class="popup"><img src="img/head_bg.jpg" alt="123"/></a></div>
+            <div class="item"><a href="img/head_bg.jpg" class="popup"><img src="img/head_bg.jpg" alt="123"/></a></div>
           </div>
         </div>
       </div>
@@ -73,13 +90,30 @@
         </div>
       </div>
     </section>
-    <section class="section section_map section_grey section_personal second-personal">
+    <section class="section section_map section_grey section_personal">
       <div class="title">
         <h2 class="title title_up title_reviews title_map"><span class="title_orange title_top">Наши</span><span class="title_green title_bottom">Врачи</span></h2>
       </div>
       <div class="section_wrapper section_personal">
+        <div class="personal__sliderwrap">
+          <div class="personal__slider">
+            <div data-item="0" class="item personal_button"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="1" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="2" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="3" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="2" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="3" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="2" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="3" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="2" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+            <div data-item="3" class="item"><img src="img/clinik1_small.jpg" alt="123"/></div>
+          </div>
+        </div>
         <div class="personal">
           <div class="personal__img active"><a href="img/clinik1.jpg" class="popup"><img src="img/clinik1.jpg" alt="123"/></a></div>
+          <div class="personal__img"><a href="img/clinik1.jpg" class="popup"><img src="img/clinik1.jpg" alt="123"/></a></div>
+          <div class="personal__img"><a href="img/clinik1.jpg" class="popup"><img src="img/clinik1.jpg" alt="123"/></a></div>
+          <div class="personal__img"><a href="img/clinik1.jpg" class="popup"><img src="img/clinik1.jpg" alt="123"/></a></div>
           <div class="personal__textwrap">		
             <div class="personal__textitem active">
               <div class="personal__title">Стоматолог-ортодонт1 <br/>Скрыпник Константин Александрович</div>
@@ -87,7 +121,172 @@
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
+            <div class="personal__textitem">
+              <div class="personal__title">Стоматолог-ортодонт2 <br/>Скрыпник Константин Александрович</div>
+              <div class="personal__text">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <div class="personal__textitem">
+              <div class="personal__title">Стоматолог-ортодонт3 <br/>Скрыпник Константин Александрович</div>
+              <div class="personal__text">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.		</p>
+              </div>
+            </div>
+            <div class="personal__textitem">
+              <div class="personal__title">Стоматолог-ортодонт4 <br/>Скрыпник Константин Александрович</div>
+              <div class="personal__text">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.		</p>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section_grey section_uslugi">
+      <h2 class="title title_up title_reviews"><span class="title_orange title_top">Мы</span><span class="title_green title_bottom">Предлагаем</span></h2>
+      <div class="section_wrapper section_flex section_items">
+        <div class="uslugi">
+          <div class="uslugi__link">
+            <div class="ih-item circle effect1"><a href="#">
+                <div class="spinner"></div>
+                <div class="img"><img src="img/work1.jpg" alt="123"/></div>
+                <div class="info">		
+                  <div class="info-back"></div>
+                </div></a></div>
+            <div class="uslugi__text">Лечение<br/>Кариеса <br/>В Севастополе</div>
+          </div>
+        </div>
+        <div class="uslugi">
+          <div class="uslugi__link">
+            <div class="ih-item circle effect1"><a href="#">
+                <div class="spinner"></div>
+                <div class="img"><img src="img/work1.jpg" alt="123"/></div>
+                <div class="info">		
+                  <div class="info-back"></div>
+                </div></a></div>
+            <div class="uslugi__text">Лечение<br/>Кариеса<br/>В Севастополе</div>
+          </div>
+        </div>
+        <div class="uslugi">
+          <div class="uslugi__link">
+            <div class="ih-item circle effect1"><a href="#">
+                <div class="spinner"></div>
+                <div class="img"><img src="img/work1.jpg" alt="123"/></div>
+                <div class="info">		
+                  <div class="info-back"></div>
+                </div></a></div>
+            <div class="uslugi__text">Лечение<br/>Кариеса<br/>В Севастополе</div>
+          </div>
+        </div>
+        <div class="uslugi">
+          <div class="uslugi__link">
+            <div class="ih-item circle effect1"><a href="#">
+                <div class="spinner"></div>
+                <div class="img"><img src="img/work1.jpg" alt="123"/></div>
+                <div class="info">		
+                  <div class="info-back"></div>
+                </div></a></div>
+            <div class="uslugi__text">Лечение<br/>Кариеса<br/>В Севастополе</div>
+          </div>
+        </div>
+        <div class="uslugi">
+          <div class="uslugi__link">
+            <div class="ih-item circle effect1"><a href="#">
+                <div class="spinner"></div>
+                <div class="img"><img src="img/work1.jpg" alt="123"/></div>
+                <div class="info">		
+                  <div class="info-back"></div>
+                </div></a></div>
+            <div class="uslugi__text">Лечение<br/>Кариеса<br/>В Севастополе</div>
+          </div>
+        </div>
+        <div class="uslugi">
+          <div class="uslugi__link">
+            <div class="ih-item circle effect1"><a href="#">
+                <div class="spinner"></div>
+                <div class="img"><img src="img/work1.jpg" alt="123"/></div>
+                <div class="info">		
+                  <div class="info-back"></div>
+                </div></a></div>
+            <div class="uslugi__text">Лечение<br/>Кариеса<br/>В Севастополе	</div>
+          </div>
+        </div>
+        <div class="uslugi">
+          <div class="uslugi__link">
+            <div class="ih-item circle effect1"><a href="#">
+                <div class="spinner"></div>
+                <div class="img"><img src="img/work1.jpg" alt="123"/></div>
+                <div class="info">		
+                  <div class="info-back"></div>
+                </div></a></div>
+            <div class="uslugi__text">Лечение<br/>Кариеса<br/>В Севастополе								</div>
+          </div>
+        </div>
+        <div class="uslugi">
+          <div class="uslugi__link">
+            <div class="ih-item circle effect1"><a href="#">
+                <div class="spinner"></div>
+                <div class="img"><img src="img/work1.jpg" alt="123"/></div>
+                <div class="info">		
+                  <div class="info-back"></div>
+                </div></a></div>
+            <div class="uslugi__text">Лечение<br/>Кариеса<br/>В Севастополе												</div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons modal-open">Записаться </div>
+    </section>
+    <section class="section section_grey section_infograf">
+      <h2 class="title title_up title_reviews"><span class="title_orange title_top">Клиника</span><span class="title_green title_bottom">работает с 2008 года</span></h2>
+      <div class="section_wrapper info__wrapper">
+        <div class="info__item info__item_left info__item_top">
+          <div class="info__text info__text_right">Квалифицированных<br/>стоматологов</div>
+          <div class="info__imgwrap">
+            <div class="info__img info__img_light"><img src="img/info1.jpg"/>
+              <div class="info__number info__number_white info__number_big">10</div>
+            </div>
+          </div>
+        </div>
+        <div class="info__item info__item_right info__item_top">
+          <div class="info__imgwrap">
+            <div class="info__img info__img_dark"><img src="img/info1.jpg"/>
+              <div class="info__number info__number_light info__number_big">1000</div>
+            </div>
+          </div>
+          <div class="info__text info__text_left">Установленных<br/>имплантов</div>
+        </div>
+        <div class="info__item info__item_left info__item_center">
+          <div class="info__text info__text_right">Довольных<br/>клиентов</div>
+          <div class="info__imgwrap">
+            <div class="info__img info__img_dark"><img src="img/info1.jpg"/>
+              <div class="info__number info__number_light info__number_small">15000</div>
+            </div>
+          </div>
+        </div>
+        <div class="info__item info__item_right info__item_center">
+          <div class="info__imgwrap">
+            <div class="info__img info__img_light"><img src="img/info1.jpg"/>
+              <div class="info__number info__number_dark info__number_big">8000</div>
+            </div>
+          </div>
+          <div class="info__text info__text_left">Установленных<br/>коронок		</div>
+        </div>
+        <div class="info__item info__item_left info__item_bottom">
+          <div class="info__text info__text_right">Конференций и курсов<br/>посетили наши<br/> доктора 	</div>
+          <div class="info__imgwrap">
+            <div class="info__img info__img_light"><img src="img/info1.jpg"/>
+              <div class="info__number info__number_dark info__number_big">238</div>
+            </div>
+          </div>
+        </div>
+        <div class="info__item info__item_right info__item_bottom">
+          <div class="info__imgwrap">
+            <div class="info__img info__img_dark"><img src="img/info1.jpg"/>
+              <div class="info__number info__number_light info__number_big">112</div>
+            </div>
+          </div>
+          <div class="info__text info__text_left">Суммарный опыт<br/>наших доеторов		</div>
         </div>
       </div>
     </section>
@@ -165,8 +364,9 @@
           </div>
         </form>
       </div>
-    </div>
+    </div><a href="#" id="sv_on" class="btn btn-default"><strong>Версия для слабовидящих</strong></a>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min.js"></script>
